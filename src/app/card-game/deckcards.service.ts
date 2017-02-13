@@ -10,13 +10,13 @@ return this.http.get("https://deckofcardsapi.com/api/deck/"+ deckId + "/shuffle/
 }
 drawCard(deckId){
 	
-	return this.http.get("http://deckofcardsapi.com/api/deck/" + deckId + "/draw/?count=2").map(res => res.json())
+	return this.http.get("https://deckofcardsapi.com/api/deck/" + deckId + "/draw/?count=2").map(res => res.json())
   .toPromise();
 }
 
 
 startGame(){
-return this.http.get("http://deckofcardsapi.com/api/deck/new/shuffle/").map(res => res.json())
+return this.http.get("https://deckofcardsapi.com/api/deck/new/shuffle/").map(res => res.json())
   .toPromise();
 
 }
